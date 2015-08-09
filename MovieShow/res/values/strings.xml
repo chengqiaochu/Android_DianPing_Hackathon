@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MovieShow</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_key">21618566</string>
+    <string name="app_secret">adabca3a5254444cb7e8e9d18758f727</string>
+    <string name="api_url">http://api.dianping.com/v1/position/get_coordinate</string>
+
+</resources>
