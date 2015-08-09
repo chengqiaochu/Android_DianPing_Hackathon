@@ -464,27 +464,30 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
+        public static final int action_settings=0x7f09000b;
         public static final int btnEmpty=0x7f090001;
-        public static final int btnMovieSearch=0x7f090005;
+        public static final int btnMovieSearch=0x7f090006;
         public static final int btnSearch=0x7f090002;
         public static final int btnShowing=0x7f090000;
-        public static final int etMovieSearch=0x7f090004;
+        public static final int etMovieSearch=0x7f090005;
         public static final int funcImplement=0x7f090003;
-        public static final int ivlistPhoto=0x7f090007;
-        public static final int lvShowing=0x7f090006;
-        public static final int tvlistName=0x7f090008;
-        public static final int tvlistURL=0x7f090009;
+        public static final int ivlistPhoto=0x7f090008;
+        public static final int lvShowing=0x7f090007;
+        public static final int tvTest=0x7f090004;
+        public static final int tvlistName=0x7f090009;
+        public static final int tvlistURL=0x7f09000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int frag_movie_empty=0x7f030001;
-        public static final int frag_movie_search=0x7f030002;
-        public static final int frag_movie_showing=0x7f030003;
-        public static final int list_showing=0x7f030004;
+        public static final int activity_search_result=0x7f030001;
+        public static final int frag_movie_empty=0x7f030002;
+        public static final int frag_movie_search=0x7f030003;
+        public static final int frag_movie_showing=0x7f030004;
+        public static final int list_showing=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int search_result=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -493,6 +496,7 @@ public final class R {
         public static final int app_name=0x7f060000;
         public static final int app_secret=0x7f060004;
         public static final int hello_world=0x7f060002;
+        public static final int title_activity_search_result=0x7f060006;
     }
     public static final class style {
         /** 

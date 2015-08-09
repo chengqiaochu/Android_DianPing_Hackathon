@@ -27,6 +27,7 @@ public class UtilData {
 
 	// Search & Get Parameter
 	public static class cSGParameter {
+		public static final String mStrJSON = "strJSON";
 		// Search
 		public static final String mCity = "city";
 		public static final String mLatitide = "latitude";

@@ -65,6 +65,11 @@
         </service>
         <service android:name="com.miao.getaddressrequest.GetAddressRequestService" >
         </service>
+
+        <activity
+            android:name="com.miao.movieshow.SearchResultActivity"
+            android:label="@string/title_activity_search_result" >
+        </activity>
     </application>
 
 </manifest>

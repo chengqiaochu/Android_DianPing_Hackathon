@@ -1,10 +1,8 @@
 package com.miao.movieshow.movie;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -23,7 +21,7 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.baidu.location.LocationClientOption.LocationMode;
 import com.miao.movieshow.R;
-import com.miao.movieshow.util.UtilAPI;
+import com.miao.movieshow.SearchResultActivity;
 import com.miao.movieshow.util.UtilData;
 
 public class FragSearch extends Fragment {
@@ -39,6 +37,12 @@ public class FragSearch extends Fragment {
 		@Override
 		public void handleMessage(Message msg) {
 			if (msg.what == UtilData.mGetDataSuccess) {
+				Bundle bundleData = msg.getData();
+				String str = bundleData.getString(UtilData.mSearchRresult);
+				Intent mIntent = new Intent(mActivity,
+						SearchResultActivity.class);
+				mIntent.putExtra(UtilData.cSGParameter.mStrJSON, str);
+				startActivity(mIntent);
 			}
 		}
 	};
@@ -115,7 +119,6 @@ public class FragSearch extends Fragment {
 				+ "\"Tel\":{\"companyTel\":\"654321\",\"homeTel\":\"123456\"}}";
 		Bundle bundleData = new Bundle();
 		bundleData.putString(UtilData.mSearchRresult, requestResult);
-
 		Message msg = Message.obtain();
 		msg.what = UtilData.mGetDataSuccess;
 		msg.setData(bundleData);

@@ -7,5 +7,6 @@
     <string name="app_key">21618566</string>
     <string name="app_secret">adabca3a5254444cb7e8e9d18758f727</string>
     <string name="api_url">http://api.dianping.com/v1/position/get_coordinate</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
 
 </resources>
