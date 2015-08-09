@@ -48,4 +48,8 @@ public class UtilData {
 		public static final String mPhoto_url = "photo_url";
 		public static final String mPhoto = "businesses_photo";
 	}
+
+	public static class CinemaShow {
+	
+	}
 }
